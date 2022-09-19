@@ -26,5 +26,16 @@ This AWS tutorial will help you learn everything you need to about AWS, its serv
   <p style=text-align:center;> Author: Vipul Jain<br>
   <a href="mailto:jain.vipul07@gmail.com">jain.vipul07@gmail.com</a></p>
 </footer>
-</body>
+ <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+ </body>
 </html>
